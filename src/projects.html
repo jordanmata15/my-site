@@ -13,7 +13,7 @@
             <a class="home-button" href="../index.html">
                 <img src="../img/home.png" alt="Transparent/white home logo">
             </a>
-            <div class="page-header">
+            <div class="section-header">
                 Projects
             </div>
             <ul class="socials">
@@ -34,9 +34,10 @@
     <div class="content">
         <div class="site-cards">
             <ul>
+                <div class="section-header">Sites</div>
                 <li>
-                    <a class="card-item" href="https://jordanmata15.github.io/odin-recipes">
-                        <img src="../img/placeholder.jpg" alt="Blank placeholder image">
+                    <a class="card-item card-item-link" href="https://jordanmata15.github.io/odin-recipes">
+                        <img class="site-img" src="../img/odin-recipes.png" alt="Blank placeholder image">
                         <div class="card-text-content">
                             <div class="card-title">Odin Recipes</div>
                             <div class="card-text">
@@ -55,8 +56,8 @@
                     </a>
                 </li>
                 <li>
-                    <a class="card-item" href="https://jordanmata15.github.io/odin-landing-page">
-                        <img src="../img/placeholder.jpg" alt="Blank placeholder image">
+                    <a class="card-item card-item-link" href="https://jordanmata15.github.io/odin-landing-page">
+                        <img class="site-img" src="../img/odin-landing-page.png" alt="Blank placeholder image">
                         <div class="card-text-content">
                             <div class="card-title">Odin Landing Page</div>
                             <div class="card-text">
@@ -75,8 +76,108 @@
             </ul>
         </div>
 
-        <div class="about-me">
-
+        <div class="site-cards">
+            <ul>
+                <div class="section-header">Code Repositories</div>
+                <li>
+                    <a class="card-item card-item-link"
+                        href="https://github.com/jordanmata15/Los-Angeles-Crime-Data-Analysis">
+                        <img src="../img/github-mark.png" alt="Github logo black background white cat">
+                        <div class="card-text-content">
+                            <div class="card-title">Los Angeles Crime Data Analysis</div>
+                            <div class="card-text">
+                                An interactive analysis of crime trends within Los Angeles county. The goal was to learn
+                                to compile large amounts of data from multiple sources for analysis. This involved
+                                sanitizing, standardizing formats, and generating intermediate tables.
+                                <div class="note">
+                                    Note: While interactivity would obviously require the data in memory to work, Github
+                                    won't even show the widgets in the preview. The notebook must be run locally
+                                    to use (or even see) the widgets.
+                                </div>
+                            </div>
+                            <ul class="card-technologies">
+                                <li>Python</li>
+                                <li>Numpy</li>
+                                <li>Pandas</li>
+                                <li>Matplotlib</li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="card-item card-item-link" href="https://github.com/jordanmata15/Bookstore">
+                        <img src="../img/github-mark.png" alt="Github logo black background white cat">
+                        <div class="card-text-content">
+                            <div class="card-title">Bookstore</div>
+                            <div class="card-text">
+                                A simple database for bookstore record keeping. The goal of this project was to
+                                understand and apply the <em>Command</em>, <em>Memento</em>, and <em>Decorator</em>
+                                patterns by creating a persistent database for books.
+                                Features:
+                                <ul class="project-feature-list">
+                                    <li>
+                                        <strong>Command Pattern:</strong> All actions on the database are serializable
+                                        objects. After each action is taken, the action is logged so that the actions
+                                        can be replayed to recover the database (simulates journaling).
+                                    </li>
+                                    <li>
+                                        <strong>Memento Pattern:</strong> After a fixed number of actions, dump the
+                                        current database contents to persistent storage and clear the journal of logged
+                                        actions.
+                                    </li>
+                                    <li>
+                                        <strong>Decorator Pattern:</strong> Decorate (compose) the original inventory in
+                                        our
+                                        memento object. The original inventory is in-memory only. Decorating the
+                                        simple inventory allows us to add the command and memento functionality
+                                        mentioned above.
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="card-technologies">
+                                <li>Java</li>
+                                <li>JUnit 5</li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+                <li class="card-item">
+                    <img src="../img/github-mark.png" alt="Github logo black background white cat">
+                    <div class="card-text-content">
+                        <div class="card-header">
+                            <div class="card-title">Autograder</div>
+                            <div class="card-disclaimer">Viewing access available upon request</div>
+                        </div>
+                        <div class="card-text">
+                            A test/grading framework built to work with Gradescope. Automates compilation, running,
+                            testing, and debugging of students' code. Makes developing test
+                            scripts and added features agnostic of the assignment/course.
+                            Features:
+                            <ul class="project-feature-list">
+                                <li>
+                                    <strong>Submission limit:</strong> Enforce a maximum number of submissions.
+                                    Encourages students to write their own unit tests rather than submit hundreds of
+                                    times until all tests pass.
+                                </li>
+                                <li>
+                                    <strong>Checksum verification:</strong> Identifies duplicate submissions to avoid
+                                    incorrectly using up submission counts.
+                                </li>
+                                <li>
+                                    <strong>Automated debugging:</strong> Uses core dumps to detect code that crashed.
+                                    The core dump allows for deterministic debugging and printing out the stack trace
+                                    at the time of the crash.
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="card-technologies">
+                            <li>Bash</li>
+                            <li>Python</li>
+                            <li>GDB</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </div>
 
     </div>
